@@ -21,7 +21,7 @@ const printResults = resultArr => {
   $displayArea.innerHTML = animalHTML.join('');
 };
 
-const getZookeepers = () => {
+const getZookeepers = (formData = {}) => {
   let queryUrl = '/api/zookeepers?';
 
   Object.entries(formData).forEach(([key, value]) => {
