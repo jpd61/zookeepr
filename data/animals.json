@@ -117,6 +117,17 @@
         "hungry"
       ],
       "id": "11"
+    },
+    {
+      "name": "Billy Bob",
+      "species": "Cheetah",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "anxious",
+        "goofy"
+      ],
+      "id": "12"
     }
   ]
 }

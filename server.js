@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+// make all static files accessible from server
 app.use(express.static('public'));
 
 // Parse incoming string or array data
@@ -113,6 +114,14 @@ app.post('/api/animals', (req, res) => {
 // look for and host index.html
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+app.get('/zookeepers', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
 });
 
 app.listen(PORT, () => {
